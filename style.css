@@ -1,0 +1,42 @@
+*{
+    box-sizing:border-box;
+}
+#sc{
+ animation-name: anim;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    padding: 5px;
+    height:30px;
+    width:auto;
+font-size: 20px;      
+}
+@keyframes anim{
+    0%{
+        
+        color: red;
+    }
+    25%{
+        
+        color:green;
+    }
+    75%{
+        color:blue;
+    }
+    100%{
+        color: yellow;
+    }
+}
+body{
+    background-color: khaki;
+    }
+#bsalery{
+    color:aqua;
+    border-color: lightsalmon;
+    border-style: solid;
+    height: 30px;
+    width:75%;
+    }
+#submit{
+    background-color: aqua;
+    margin:10px;
+    }
