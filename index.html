@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Salary Calculator </title>
+   <link rel="stylesheet" href="salery.css" type="text/css" />
+</head>
+<body>
+   <center>
+<p id="sc">Salery Calculator</p>
+   <p id="spay">7<sup>th</sup> Pay Commision</p>
+   <form >
+       <input placeholder="Your Base salary In Rs" type="number" id="bsalery" /><br/>
+       <input type="submit" onclick="getValue()" id="submit" />
+   </form>
+   <br />
+   </center>
+   <script type="text/javascript">
+      var bSalery,bSalery_raw, total,HRA,trans,DA,ITAX,ins;
+       function getValue() {
+      bSalery_raw=document.getElementById('bsalery').value;
+      bSalery=Number(bSalery_raw)*2.57;
+      HRA=(bSalery*40)/100;
+      trans=(bSalery*5)/100;
+      DA=(bSalery*17)/100;
+      ITAX=(bSalery*5)/100;
+      ins=(bSalery*2)/100;
+      total=(bSalery+HRA+trans+DA)-(ITAX+ins);
+      alert("Your Total Salary :\n"+"Rs."+Math.round(total));
+      }
+   </script>
+</body>
+</html>
